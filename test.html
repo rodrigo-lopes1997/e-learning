@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Quiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href=""> -->
+    </head>
+
+    <body>
+        <h1> Q1. What is 9+10?</h1>
+        <input type="radio" name="question1" id="correct">21<br>
+        <input type="radio" name="question1">22<br>
+        <input type="radio" name="question1">19<br>
+        <input type="radio" name="question1">15<br>
+
+        <input type="submit" name="submit" value="submitQuiz" onclick="result()" />
+
+        <script type="text/javascript">
+            function result() {
+                let score = 0;
+                if (document.getElementById('correct').checked) {
+                    score++
+                    document.write("🟢Correct!!! - 9+10 does equal 21 because, if you start with 9 and add 10 to that number it will equal 21")
+                } else {
+                    score--
+                    document.write("🔴Incorrect bozo! - 9+10 equals 21 because if you start with 9 and add 10 to that number it will equal 21")
+                }
+            }
+
+        </script>
+    </body>

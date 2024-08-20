@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segurança no trabalho </title>
+        <link rel="stylesheet" href="./coursesStyle.css">
+
+        <!-- sweet alert  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.css"
+            integrity="sha512-Gebe6n4xsNr0dWAiRsMbjWOYe1PPVar2zBKIyeUQKPeafXZ61sjU2XCW66JxIPbDdEH3oQspEoWX8PQRhaKyBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.12.4/sweetalert2.min.js"
+            integrity="sha512-w4LAuDSf1hC+8OvGX+CKTcXpW4rQdfmdD8prHuprvKv3MPhXH9LonXX9N2y1WEl2u3ZuUSumlNYHOlxkS/XEHA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="fst_navDiv">
+                <a class="" href="home.html">Plataforma E-learning</a>
+                <!-- <span class="">Learn and Implement </span> -->
+            </div>
+
+            <div class="Snd_navDiv">
+                <ul class="">
+                    <!-- <li class=""><a href="home.html" class="a_tag_elm"> Home</a></li> -->
+                    <li class="">
+                        <a onclick="document.location='#allcourses'" class="a_tag_elm">Cursos</a>
+                    </li>
+                    <!-- <li class="">
+              <a href="myprofile.html" class="a_tag_elm">My Profile</a>
+            </li>
+            <li class=""><a href="index.html" class="a_tag_elm">Logout</a></li> -->
+                </ul>
+            </div>
+
+
+        </nav>
+
+        <div class="container">
+
+            <div class="visitinglinks">
+                <div class="htmlQus questions">
+                    <ol>
+                        <li id="intro-text">
+                            <h4>Introdução</h4>
+                        </li>
+                        <li id="video-1">
+                            <h4><a>Video 1</a></h4>
+                        </li>
+                        <li id="page-2-click">
+                            <h4>Questionário 1</h4>
+                        </li>
+                        <li id="coclusao-click">
+                            <h4>Conclusão</h4>
+                        </li>
+                        <!--   <li>
+                            <h4>Lorem ipsum dolor sit amet ?</h4>
+                        </li>
+                        <li>
+                            <h4>Lorem ipsum dolor sit amet ?</h4>
+                        </li>
+                        <li>
+                            <h4>Lorem ipsum dolor sit amet ?</h4>
+                        </li>
+                        <li>
+                            <h4>Lorem ipsum dolor sit amet ?</h4>
+                        </li>
+                        <li>
+                            <h4>Lorem ipsum dolor sit amet ?</h4>
+                        </li>
+                        <li>
+                            <h4>Lorem ipsum dolor sit amet ?</h4>
+                        </li> -->
+                    </ol>
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; align-items: center;" class="mainContent" id="intro">
+                <h1>Segurança no trabalho.</h1>
+                <p style="max-width: 80%; text-align: center;">Seja bem vindo ao curso sobre Segurança no trabalho, de
+                    seguida iremos apresentar alguns
+                    vídeos
+                    educativos sobre segurança no trabalho sobre os quais lhe irá ser apresentado um questionário para
+                    melhor o ajudar a entender o objectivo do curso</p>
+            </div>
+
+            <!-- Video page -->
+            <div style="justify-content: center; align-items: center;" class="mainContent" id="page-1">
+                <h1>Segurança no trabalho.</h1>
+                <video width="820" height="640" controls>
+                    <source src="seguranca1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a class="continuar" id="continuar-1">Continuar</a>
+            </div>
+            <!-- Quizz page -->
+            <div style="justify-content: center; align-items: center;" class=" mainContent" id="page-2">
+                <h1>Segurança no trabalho.</h1>
+                <h3>Este curso pretende mater a segurança no trabalho combatendo de um ponto de vista: </h3>
+                <div class="quizz-q" style="flex-direction: row; display: flex;">
+                    <div class="row-1">
+                        <input type="radio" name="question1">Médico<br>
+                        <input type="radio" name="question1" id="correct">Não Médico<br>
+                    </div>
+                    <div class="row-2">
+                        <input type="radio" name="question1">Prático<br>
+                        <input type="radio" name="question1">Nenhum<br>
+                    </div>
+                </div>
+                <a class="continuar" id="continuar-2">Continuar</a>
+            </div>
+            <!-- Conslusao -->
+            <div style="justify-content: center; align-items: center;" class=" mainContent" id="page-3">
+                <h1>Segurança no trabalho.</h1>
+                <h1>Conslusão</h1>
+                <p style="max-width: 80%; text-align: center;">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                    Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+
+    </body>
+    <script src="seguranca.js"></script>
+
+</html>
